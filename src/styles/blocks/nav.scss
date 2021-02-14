@@ -28,6 +28,7 @@
     line-height: $headerHeight;
     text-decoration: none;
     color: #000;
+    transition: color 0.2s;
 
     &:hover {
       color: $secondaryColor;
