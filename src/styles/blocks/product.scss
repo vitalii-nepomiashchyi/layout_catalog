@@ -2,7 +2,7 @@
   @include crossAxisCentered;
   flex-direction: column;
   padding: 18px 0 15px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $borderColor;
   border-radius: 5px;
 
   &__image {
@@ -12,7 +12,7 @@
     transition: transform 1s;
 
     &:hover {
-      outline: 3px solid #f3f3f3;
+      outline: 3px solid $borderColor;
       transform: scale(1.2);
     }
   }
