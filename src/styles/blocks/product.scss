@@ -1,13 +1,20 @@
 .product {
   @include crossAxisCentered;
   flex-direction: column;
-  padding: 30px 0 15px;
-  border: 1px solid #f3f3f3;
+  padding: 18px 0 15px;
+  border: 1px solid $borderColor;
   border-radius: 5px;
 
   &__image {
     width: 160px;
-    height: 134px;
+    height: 158px;
+    padding: 12px 0;
+    transition: transform 1s;
+
+    &:hover {
+      outline: 3px solid $borderColor;
+      transform: scale(1.2);
+    }
   }
 
   &__item {
@@ -26,10 +33,11 @@
     background-color: $secondaryColor;
     border-radius: 5px;
     color: $primaryColor;
+    transition: color 0.2s, background-color 0.2s, border 0.2s;
 
     &:hover {
       background: $primaryColor;
-      border: 1px solid ;
+      border: 1px solid;
       color: $secondaryColor;
     }
   }
