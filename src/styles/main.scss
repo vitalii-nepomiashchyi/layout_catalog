@@ -10,17 +10,14 @@
 @import "blocks/stars";
 
 .main {
-  @include flexCentered;
-  padding-top: 25px;
+  padding-top: 50px;
 
   &__content {
+    margin: 0 auto;
+    max-width: $cardWidth * $cardsPerRow + $horizontalGap * ($cardsPerRow - 1);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: ($cardWidth + $cardHorizontalMargin) * $cardsPerRow;
-  }
-
-  &__item {
-    width: 200px;
-    margin: 25px $cardHorizontalMargin / 2;
+    gap: 50px 48px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
   }
 }
